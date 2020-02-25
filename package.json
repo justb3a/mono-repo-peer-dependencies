@@ -7,19 +7,17 @@
   "workspaces": ["packages/*"],
   "scripts": {
     "start": "parcel index.html",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare-none": "install-peers"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "MIT",
-  "peerDependencies": {
-    "axe-core": "3.2.2",
+  "dependencies": {
     "@types/react": "^16.9.22",
     "@types/react-dom": "^16.9.5",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "typescript": "^3.8.2",
-    "eslint": "^6.8.0",
+    "react": "*",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
     "@types/node": "^13.7.4",
     "@typescript-eslint/eslint-plugin": "^2.20.0",
     "@typescript-eslint/parser": "^2.20.0",
@@ -27,9 +25,15 @@
     "babel-eslint": "^10.0.3",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-react": "^7.18.3",
-    "eslint-plugin-react-hooks": "^2.4.0"
+    "eslint-plugin-react-hooks": "^2.4.0",
+    "typescript": "*"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "typescript": "*"
   }
 }
